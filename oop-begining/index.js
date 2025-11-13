@@ -27,3 +27,18 @@ person2.getFullName=()=>{
 }
 
 console.log(person2)
+
+// object created by constructor
+
+function person3(){
+
+    this.firstname="monayem";
+    this.lastname="hossain";
+    this.fullName=()=>{
+        return ` me ${this.firstname} ${this.lastname}`
+    }
+
+} 
+
+let personInstance = new person3();
+console.log(personInstance)
